@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RoskampMedia | Coming Soon</title>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <head>
+        <title>RoskampMedia | Willkommen</title>
+        <meta charset="utf-8" >
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    </head>
 
-* {
-  box-sizing: border-box;
-}
+    <bod>
 
-.bg-image {
-  /* The image used */
-  background-image: url("bg.jpg");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+        <!-- HEADER ------------------------------------------------------------------------------------>
 
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-</style>
-</head>
-<body>
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo" >
+                </a>
+            </div>
 
-<div class="bg-image"></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<div class="bg-text">
-  <!--<h2>Blurred Background</h2>-->
-  <h1 style="font-size:50px">Coming Soon</h1>
-  <!--<p>And I'm a Photographer</p>-->
-</div>
+        <!-- HOME ------------------------------------------------------------------------------------>
 
-</body>
+        <section id="home">
+            <h1>RoskampMedia</h1>
+            <h2>Softwareentwicklung &amp; IT-Dienste</h2>
+            <a href="#about"><img src="img/pfeil1.png" alt="Pfeil"></a>
+        </section>
+
+        <!-- ABOUT ------------------------------------------------------------------------------------>
+
+        <section id="about">
+            <h3>About</h3>
+            <hr>
+            <img src="img/avatar.png" alt="Avatar">
+            <h4>RoskampMedia</h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </section>
+
+        <!-- WORK ------------------------------------------------------------------------------------>
+
+        <section id="work">
+            <h3>Work</h3>
+            <hr>
+            <div id="projects">
+                <ul>
+                    <li><a href=""><img src="https://via.placeholder.com/280x170" alt="Projekt01"></a></li>
+                    <li><a href=""><img src="https://via.placeholder.com/280x170" alt="Projekt02"></a></li>
+                    <li><a href=""><img src="https://via.placeholder.com/280x170" alt="Projekt03"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT ------------------------------------------------------------------------------------>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <hr>
+            <form>
+                <input type="email" tabindex="1" placeholder="eMail" required><br>
+                <input type="text" tabindex="2" placeholder="Betreff" required><br>
+                <textarea tabindex="3" placeholder="Nachricht"></textarea><br>
+                <input type="submit" class="button" >
+            </form>
+        </section>
+
+        <!-- FOOTER ------------------------------------------------------------------------------------>
+
+        <footer>
+            <p>&copy; 2021 RoskampMedia</p>
+        </footer>
+    </bod>
 </html>
